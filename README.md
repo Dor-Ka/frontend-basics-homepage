@@ -22,7 +22,7 @@ frontend-basics-homepage/ </br>
 
 ## 👩‍💻 Live Demo
 
-_(Link coming soon – after first deploy)_
+View the project: [frontend basics homepage](https://dor-ka.github.io/frontend-basics-homepage/)
 
 ## 🛠️ Built With:
 
