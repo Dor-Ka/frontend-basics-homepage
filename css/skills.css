@@ -1,9 +1,18 @@
 .skills {
     padding: 2rem;
     margin: 5%;
+    border-radius: 8px;
     background-color: #f9f9f9;
 
 }
+
+.skills:hover {
+    box-shadow: 0px 0px 50px 0px hsl(29, 77%, 90%);
+}
+
+.skills:active {
+    box-shadow: 0px 0px 50px 0px hsl(29, 77%, 80%);
+  }
 
 .skills__title {
     text-align: center;
