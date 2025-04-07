@@ -1,31 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>frontend basics homepage</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/about.css" />
     <script defer src="js/script.js"></script>
 </head>
+
 <body>
     <header>
         <h1>Hello, I'm Dorota</h1>
         <p>Frontend Developer in the making 🚀</p>
-      </header>
-    
-      <main>
-        
-        <section id="about">
-          <h2>About Me</h2>
-          <img src="img/profile.jpeg" alt="Profile picture" />
-          <p>Hi! I'm learning frontend development and building this page step by step.
-            I love clean code, minimal design and solving problems with JavaScript.</p>
+    </header>
+
+    <main>
+
+        <section class="about">
+            <div class="about__container">
+                <img src="img/profile.jpeg" alt="Profile picture"  class="about__photo" />
+                <div class="about__content">
+                    <h2 class="about__title">About Me</h2>
+                    <p class="about__description">
+                        Hi! I'm learning frontend development and building this page step by step.
+                        I love clean code, minimal design and solving problems with JavaScript.
+                    </p>
+                </div>
+            </div>
         </section>
-      </main>
-    
-      <footer>
+
+    </main>
+
+    <footer>
         <p>&copy; 2025 Dorota Karpinska</p>
-      </footer>
-    
+    </footer>
+
 </body>
+
 </html>
