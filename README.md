@@ -21,6 +21,7 @@ frontend-basics-homepage/
 &emsp;├── style.css   
 &emsp;└── about.css   
 &emsp;└── skills.css    
+&emsp;└── projects.css    
 ├── js/script.js   
 ├── img/profile.jpg   
 └── README.md  
@@ -47,8 +48,14 @@ frontend-basics-homepage/
     - Continued BEM methodology for styling consistency
     - Enhanced visual hierarchy with typography and color improvements
 
+- **v0.4** (2025-04-07):
+    - Added "Projects" section with sample project showcasing skills
+    - Applied consistent styling for project items
+    - Linked to GitHub and live demo for the project
+
 ## 📅 Versions
 
 - **v0.1** (2025-04-06): Initial structure with header and basic styling
 - **v0.2** (2025-04-07): Added "About Me" section, styled with BEM methodology
 - **v0.3** (2025-04-07): Added "Skills" section and implemented grid layout for responsive design
+- **v0.4** (2025-04-07): Added "Projects" section and implemented consistent styling for project items
