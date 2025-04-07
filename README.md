@@ -49,6 +49,6 @@ frontend-basics-homepage/
 
 ## 📅 Versions
 
-- **v0.1** (2025-04-01): Initial structure with header and basic styling
+- **v0.1** (2025-04-06): Initial structure with header and basic styling
 - **v0.2** (2025-04-07): Added "About Me" section, styled with BEM methodology
 - **v0.3** (2025-04-07): Added "Skills" section and implemented grid layout for responsive design
