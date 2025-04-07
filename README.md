@@ -27,7 +27,7 @@ frontend-basics-homepage/
 
 ## 🚀 Progress and Features
 
-- **v0.1** (2025-04-01):
+- **v0.1** (2025-04-06):
     - Initial structure with header and basic styling
     - Basic global styles
     - Applied semantic HTML tags (`<header>`, `<main>`, `<footer>`)
