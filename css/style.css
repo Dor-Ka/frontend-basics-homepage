@@ -1,18 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    padding: 20px;
-    margin: 5%;
-    background-color: #f5f5f5;
-    color: #333;
-  }
-  
-  header,
-  footer {
-    text-align: center;
-    margin-bottom: 20px;
-  }  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding: 20px;
+  margin: 5%;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+header,
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
