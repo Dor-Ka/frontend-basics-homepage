@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>frontend basics homepage</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/nav.css" />
     <link rel="stylesheet" href="css/section.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/skills.css" />
@@ -15,6 +16,15 @@
 </head>
 
 <body>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#skills" class="nav__link">Skills</a></li>
+            <li><a href="#projects" class="nav__link">Projects</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+    </nav>
+
     <header>
         <h1>Hello, I'm Dorota</h1>
         <p>Frontend Developer in the making 🚀</p>
@@ -22,7 +32,7 @@
 
     <main>
 
-        <section class="section about">
+        <section id="about" class="section about">
             <div class="about__container">
                 <img src="img/profile.jpeg" alt="Profile picture" class="about__photo" />
                 <div class="about__content">
@@ -35,7 +45,7 @@
             </div>
         </section>
 
-        <section class="section skills">
+        <section id="skills" class="section skills">
             <h2 class="section__title">My Skills</h2>
             <ul class="skills__list">
                 <li class="skills__item">HTML5</li>
@@ -47,7 +57,7 @@
             </ul>
         </section>
 
-        <section class="section projects">
+        <section id="projects" class="section projects">
             <h2 class="section__title">My Projects</h2>
             <div class="projects__list">
 
@@ -69,13 +79,15 @@
             </div>
         </section>
 
-        <section class="section contact">
+        <section id="contact" class="section contact">
             <h2 class="section__title">Contact Me</h2>
             <p class="contact__description">Feel free to reach out for collaborations, feedback, or just to say hi!</p>
             <div class="contact__info">
-                <p><strong>Email:</strong> <a href="mailto:dorotakarpinska.dev@gmail.com">dorotakarpinska.dev@gmail.com</a></p>
-                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/d-karpinska/" target="_blank">d-karpinska
-                        </a></p>
+                <p><strong>Email:</strong> <a
+                        href="mailto:dorotakarpinska.dev@gmail.com">dorotakarpinska.dev@gmail.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/d-karpinska/"
+                        target="_blank">d-karpinska
+                    </a></p>
                 <p><strong>GitHub:</strong> <a href="https://github.com/dor-ka" target="_blank">Dor-Ka</a></p>
             </div>
         </section>
