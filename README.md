@@ -20,6 +20,7 @@ frontend-basics-homepage/
 ├── css  
 &emsp;├── style.css   
 &emsp;└── about.css   
+&emsp;└── skills.css    
 ├── js/script.js   
 ├── img/profile.jpg   
 └── README.md  
@@ -39,8 +40,15 @@ frontend-basics-homepage/
     - Styled "About Me" section
     - Introduced profile image for "About Me" section
 
+- **v0.3** (2025-04-07):
+    - Added "Skills" section showcasing frontend technologies
+    - Styled "Skills" section with grid layout for a responsive design
+    - Introduced hover effects for interactive elements
+    - Continued BEM methodology for styling consistency
+    - Enhanced visual hierarchy with typography and color improvements
+
 ## 📅 Versions
 
 - **v0.1** (2025-04-01): Initial structure with header and basic styling
 - **v0.2** (2025-04-07): Added "About Me" section, styled with BEM methodology
-- **v0.3** (coming soon): Added responsive layout and theme switcher
+- **v0.3** (2025-04-07): Added "Skills" section and implemented grid layout for responsive design
