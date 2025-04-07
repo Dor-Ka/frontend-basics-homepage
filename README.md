@@ -18,7 +18,9 @@ View the project: [frontend basics homepage](https://dor-ka.github.io/frontend-b
 frontend-basics-homepage/  
 ├── index.html  
 ├── css  
-&emsp;├── style.css   
+&emsp;├── style.css     
+&emsp;├── nav.css      
+&emsp;├── nav.css  
 &emsp;└── about.css   
 &emsp;└── skills.css    
 &emsp;└── projects.css    
@@ -59,6 +61,11 @@ frontend-basics-homepage/
     - Created a new CSS file (`contact.css`) for the Contact section styles
     - Updated link text for LinkedIn and GitHub to user-specific handles
 
+- **v0.6** (2025-04-07):
+    - Added navigation bar with anchor links to each section
+    - Styled navigation using Flexbox and custom hover effects
+    - Enabled smooth scroll behavior via global styles
+
 ## 📅 Versions
 
 - **v0.1** (2025-04-06): Initial structure with header and basic styling
@@ -66,3 +73,4 @@ frontend-basics-homepage/
 - **v0.3** (2025-04-07): Added "Skills" section and implemented grid layout for responsive design
 - **v0.4** (2025-04-07): Added "Projects" section and implemented consistent styling for project items
 - **v0.5** (2025-04-07): Added "Contact Me" section and moved styles to a separate file
+- **v0.6** (2025-04-07): Added navigation bar with anchor links and smooth scrolling
