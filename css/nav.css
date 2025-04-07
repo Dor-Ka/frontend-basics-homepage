@@ -1,0 +1,26 @@
+.nav {
+    margin-top: 1rem;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav__link:hover,
+.nav__link:focus {
+    color: #E38327;
+    text-decoration: underline;
+}
