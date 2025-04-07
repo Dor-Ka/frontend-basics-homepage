@@ -15,13 +15,6 @@
     border: 4px solid #E38327;
 }
 
-.about__title {
-    color: #E38327;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
 .about__description {
     font-size: 1.1rem;
     line-height: 1.6;

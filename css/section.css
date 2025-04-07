@@ -1,0 +1,24 @@
+.section {
+    padding: 2rem;
+    margin: 5%;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.section:hover {
+    box-shadow: 0px 0px 50px 0px hsl(29, 77%, 90%);
+    transform: translateY(-4px);
+    transition: all 0.3s ease;
+}
+
+.section:active {
+    box-shadow: 0 4px 12px rgba(227, 131, 39, 0.3);
+    transform: scale(0.98);
+}
+
+.section__title {
+  text-align: center;
+  font-size: 2rem;
+  color: #E38327;
+  margin-bottom: 2rem;
+}
