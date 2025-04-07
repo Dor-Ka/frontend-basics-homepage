@@ -22,6 +22,7 @@ frontend-basics-homepage/
 &emsp;└── about.css   
 &emsp;└── skills.css    
 &emsp;└── projects.css    
+&emsp;└── contact.css   
 ├── js/script.js   
 ├── img/profile.jpg   
 └── README.md  
@@ -53,9 +54,15 @@ frontend-basics-homepage/
     - Applied consistent styling for project items
     - Linked to GitHub and live demo for the project
 
+- **v0.5** (2025-04-07):
+    - Added "Contact Me" section with contact details
+    - Created a new CSS file (`contact.css`) for the Contact section styles
+    - Updated link text for LinkedIn and GitHub to user-specific handles
+
 ## 📅 Versions
 
 - **v0.1** (2025-04-06): Initial structure with header and basic styling
 - **v0.2** (2025-04-07): Added "About Me" section, styled with BEM methodology
 - **v0.3** (2025-04-07): Added "Skills" section and implemented grid layout for responsive design
 - **v0.4** (2025-04-07): Added "Projects" section and implemented consistent styling for project items
+- **v0.5** (2025-04-07): Added "Contact Me" section and moved styles to a separate file
