@@ -90,6 +90,12 @@ frontend-basics-homepage/
         - Added hover effect with rotation animation for the icon.
         - Separated related styles into a new CSS file (scroll.css) for maintainability.
 
+- **v1.0** (2025-04-08):
+    - **Accessibility Improvements**:
+        - Added `aria-label` to project links for better accessibility.
+        - Improved semantic HTML by using `<article>`, `<section>`, `<header>`, and `<footer>` elements.
+        - Enhanced link accessibility with hover, focus, and active states for better navigation.
+
 ## 📅 Versions
 
 - **v0.1** (2025-04-06): Initial structure with header and basic styling
@@ -101,3 +107,4 @@ frontend-basics-homepage/
 - **v0.7** (2025-04-08): Added sticky navigation bar and scroll spy functionality.
 - **v0.8** (2025-04-08): Added responsive design improvements and media queries for navigation, projects, and contact sections.
 - **v0.9** (2025-04-08): Scroll to Top button with smooth scroll, SVG icon, hover animation, and dedicated styling
+- **v1.0** (2025-04-08): Finalized homepage layout, improved styling, and enhanced accessibility. Official version 1.0 with full project readiness.
