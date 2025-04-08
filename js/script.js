@@ -1,6 +1,4 @@
-// Script file ready for interactivity (e.g. theme switcher later)
-console.log("Portfolio loaded");
-
+// Scroll spy: Track active section and highlight corresponding nav link
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav__link");
 
