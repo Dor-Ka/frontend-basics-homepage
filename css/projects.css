@@ -80,3 +80,30 @@
     outline: 1px solid #E38327;  
     box-shadow: 0 0 5px 2px rgba(227, 131, 39, 0.5); 
 }
+
+
+@media (max-width: 470px) {
+    .projects__list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    }
+
+    .project {
+        padding: 1rem; 
+    }
+
+    .project__name {
+        font-size: 1.2rem; 
+    }
+
+    .project__description {
+        font-size: 0.9rem; 
+    }
+
+    .project__tech li {
+        font-size: 0.8rem; 
+    }
+
+    .project__links a {
+        font-size: 0.9rem; 
+    }
+}
