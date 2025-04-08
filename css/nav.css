@@ -36,5 +36,48 @@
 .nav__link.active {
     color: #E38327;
     text-decoration: underline;
-  }
-  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav__list {
+        gap: 1.5rem;
+    }
+
+    .nav__link {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav__list {
+        gap: 0.5rem;
+    }
+
+    .nav__link {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 299px) {
+    .nav__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.25rem; 
+        padding: 0;
+        margin: 0;
+        text-align: center; 
+
+    }
+
+    .nav__link {
+        font-size: 0.9rem; 
+        padding: 0.5rem 1rem; 
+        text-align: center; 
+    }
+
+    .nav__link.active {
+        font-size: 1rem; 
+    }
+}
+
+
