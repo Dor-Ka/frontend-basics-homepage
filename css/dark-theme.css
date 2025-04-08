@@ -1,0 +1,88 @@
+body.theme-toggle--dark {
+    background-color: #333;
+    color: #f5f5f5;
+}
+
+body.theme-toggle--dark .section {
+    background-color: #444;
+}
+
+body.theme-toggle--dark h1, 
+body.theme-toggle--dark h2 {
+    color: #E38327;
+}
+
+body.theme-toggle--dark .project, 
+body.theme-toggle--dark .skills__list {
+    background-color: #444;
+    color: #f5f5f5;
+}
+
+body.theme-toggle--dark .project__name {
+    color: #fff;
+}
+
+body.theme-toggle--dark .skills__item {
+    background-color: #444;
+    border: 1px solid #E38327;
+    color: #f5f5f5;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+body.theme-toggle--dark .skills__item:hover, 
+body.theme-toggle--dark .skills__list li:hover,
+body.theme-toggle--dark .project__tech li:hover {
+    background-color: #E38327;
+    color: #333;
+}
+
+body.theme-toggle--dark .project__tech li {
+    background-color: #444;
+    border: 1px solid #E38327;
+    color: #f5f5f5;
+}
+
+body.theme-toggle--dark .project__tech li:active {
+    background-color: #E38327;
+    color: #fff;
+}
+
+body.theme-toggle--dark .project__description {
+    font-size: 1rem;
+    color: #ccc;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+body.theme-toggle--dark .nav {
+    background-color: #222;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.theme-toggle--dark .nav__link {
+    color: #ccc;
+}
+
+body.theme-toggle--dark .nav__link:hover, 
+body.theme-toggle--dark .nav__link:focus,
+body.theme-toggle--dark .nav__link.active {
+    color: #E38327;
+    text-decoration: underline;
+}
+
+body.theme-toggle--dark .nav__theme-toggle {
+    color: #f5f5f5;
+}
+
+body.theme-toggle--dark .nav__theme-toggle:hover {
+    color: #E38327;
+}
+
+body.theme-toggle--dark .theme-toggle__button {
+    color: #f5f5f5;
+    border-color: #E38327;
+}
+
+body.theme-toggle--dark .theme-toggle__button:hover {
+    background-color: #E38327;
+}
