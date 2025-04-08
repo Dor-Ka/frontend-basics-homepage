@@ -81,6 +81,14 @@ frontend-basics-homepage/
         - Optimized margins and padding for better responsiveness on small screens.
         - Minor styling adjustments to maintain consistency and readability across different screen sizes.
 
+- **v0.9** (2025-04-08):
+    - Scroll to Top Button:
+        - Added a floating "Scroll to Top" button for better navigation on longer pages.
+        - Implemented smooth scroll behavior when clicking the button.
+        - Used inline SVG arrow icon for styling flexibility and color control.
+        - Added hover effect with rotation animation for the icon.
+        - Separated related styles into a new CSS file (scroll.css) for maintainability.
+
 ## 📅 Versions
 
 - **v0.1** (2025-04-06): Initial structure with header and basic styling
@@ -91,3 +99,4 @@ frontend-basics-homepage/
 - **v0.6** (2025-04-07): Added navigation bar with anchor links and smooth scrolling
 - **v0.7** (2025-04-08): Added sticky navigation bar and scroll spy functionality.
 - **v0.8** (2025-04-08): Added responsive design improvements and media queries for navigation, projects, and contact sections.
+- **v0.9** (2025-04-08): Scroll to Top button with smooth scroll, SVG icon, hover animation, and dedicated styling
