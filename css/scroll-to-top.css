@@ -1,0 +1,26 @@
+
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 100;
+    background-color: #E38327;
+    color: #333;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    transition: opacity 0.3s ease;
+  }
+  
+  #scrollToTopBtn:hover {
+    background-color: #f9f9f9;
+    svg {
+      transform: rotate(360deg);
+      transition: transform 0.5s ease;
+    }
+  }
+  
