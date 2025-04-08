@@ -24,7 +24,8 @@ frontend-basics-homepage/
 &emsp;└── about.css   
 &emsp;└── skills.css    
 &emsp;└── projects.css    
-&emsp;└── contact.css   
+&emsp;└── contact.css      
+&emsp;└── scroll-to-up.css   
 ├── js/script.js   
 ├── img/profile.jpg   
 └── README.md  
