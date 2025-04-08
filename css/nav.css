@@ -33,4 +33,8 @@
     text-decoration: none;
 }
 
-
+.nav__link.active {
+    color: #E38327;
+    text-decoration: underline;
+  }
+  
