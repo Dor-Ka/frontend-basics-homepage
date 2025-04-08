@@ -20,7 +20,7 @@ frontend-basics-homepage/
 ├── css  
 &emsp;├── style.css     
 &emsp;├── nav.css      
-&emsp;├── nav.css  
+&emsp;├── section.css  
 &emsp;└── about.css   
 &emsp;└── skills.css    
 &emsp;└── projects.css    
@@ -66,6 +66,11 @@ frontend-basics-homepage/
     - Styled navigation using Flexbox and custom hover effects
     - Enabled smooth scroll behavior via global styles
 
+- **v0.7** (2025-04-08):
+    - Updated navigation to stay visible while scrolling
+    - Added JavaScript functionality to highlight active section link during scroll (scroll spy)
+    - Enhanced scroll behavior and fixed issues with active link not updating on large screens
+
 ## 📅 Versions
 
 - **v0.1** (2025-04-06): Initial structure with header and basic styling
@@ -74,3 +79,4 @@ frontend-basics-homepage/
 - **v0.4** (2025-04-07): Added "Projects" section and implemented consistent styling for project items
 - **v0.5** (2025-04-07): Added "Contact Me" section and moved styles to a separate file
 - **v0.6** (2025-04-07): Added navigation bar with anchor links and smooth scrolling
+- **v0.7** (2025-04-08): Added sticky navigation bar and scroll spy functionality.
