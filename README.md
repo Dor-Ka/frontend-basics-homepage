@@ -95,6 +95,11 @@ frontend-basics-homepage/
         - Added `aria-label` to project links for better accessibility.
         - Improved semantic HTML by using `<article>`, `<section>`, `<header>`, and `<footer>` elements.
         - Enhanced link accessibility with hover, focus, and active states for better navigation.
+     - **Theme Toggle**:
+        - Added functionality to toggle between light and dark modes.
+        - Persisted theme preference in `localStorage` for a consistent user experience across sessions.
+        - Updated theme icon accordingly based on the current theme (☽ for light, ☀ for dark).
+        - Applied dark mode styles for various elements including navigation, sections, and project items.
 
 ## 📅 Versions
 
@@ -107,4 +112,4 @@ frontend-basics-homepage/
 - **v0.7** (2025-04-08): Added sticky navigation bar and scroll spy functionality.
 - **v0.8** (2025-04-08): Added responsive design improvements and media queries for navigation, projects, and contact sections.
 - **v0.9** (2025-04-08): Scroll to Top button with smooth scroll, SVG icon, hover animation, and dedicated styling
-- **v1.0** (2025-04-08): Finalized homepage layout, improved styling, and enhanced accessibility. Official version 1.0 with full project readiness.
+- **v1.0** (2025-04-08): Finalized homepage layout, improved styling, accessibility improvements, and theme toggle functionality with localStorage support.
