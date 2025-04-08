@@ -24,8 +24,7 @@ window.addEventListener("scroll", () => {
   });
 });
 
-
-//the Scroll to Top
+// Scroll to Top Button
 const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
 window.addEventListener("scroll", () => {
@@ -38,3 +37,5 @@ scrollToTopBtn.addEventListener("click", () => {
     behavior: "smooth"
   });
 });
+
+
