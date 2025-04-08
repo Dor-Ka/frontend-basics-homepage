@@ -7,7 +7,6 @@
 
 .section:hover {
     box-shadow: 0px 0px 50px 0px hsl(29, 77%, 90%);
-    transform: translateY(-4px);
     transition: all 0.3s ease;
 }
 
