@@ -71,6 +71,16 @@ frontend-basics-homepage/
     - Added JavaScript functionality to highlight active section link during scroll (scroll spy)
     - Enhanced scroll behavior and fixed issues with active link not updating on large screens
 
+- **v0.8** (2025-04-08):
+    - **Responsive Design Enhancements**:
+        - Improved media queries for navigation, projects, and contact sections for better responsiveness across devices.
+        - Adjusted navigation layout (grid) for smaller screens (below 470px).
+        - Applied responsive grid layout for "My Projects" section to adjust the number of columns based on screen width.
+        - Added `word-wrap: break-word;` to the contact section for the email address to prevent overflow on screens below 420px.
+    - **CSS Improvements**:
+        - Optimized margins and padding for better responsiveness on small screens.
+        - Minor styling adjustments to maintain consistency and readability across different screen sizes.
+
 ## 📅 Versions
 
 - **v0.1** (2025-04-06): Initial structure with header and basic styling
@@ -80,3 +90,4 @@ frontend-basics-homepage/
 - **v0.5** (2025-04-07): Added "Contact Me" section and moved styles to a separate file
 - **v0.6** (2025-04-07): Added navigation bar with anchor links and smooth scrolling
 - **v0.7** (2025-04-08): Added sticky navigation bar and scroll spy functionality.
+- **v0.8** (2025-04-08): Added responsive design improvements and media queries for navigation, projects, and contact sections.
