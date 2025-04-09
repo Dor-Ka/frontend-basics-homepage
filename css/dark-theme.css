@@ -81,6 +81,7 @@ body.theme-toggle--dark .nav__theme-toggle:hover {
 body.theme-toggle--dark .theme-toggle__button {
     color: #f5f5f5;
     border-color: #E38327;
+    flex-direction: row-reverse;
 }
 
 body.theme-toggle--dark .theme-toggle__button:hover {
