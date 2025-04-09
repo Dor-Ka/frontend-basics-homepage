@@ -105,6 +105,11 @@ frontend-basics-homepage/
     - **Bug Fixes and Enhancements**:
         - **Fixed section scroll positioning under navbar**: Adjusted scrolling behavior to ensure sections are correctly positioned below the fixed navigation bar.
         - **Improved theme toggle button**: Enhanced the theme toggle button with a visual icon (☀/☽) and a dynamic label that changes based on the current theme for better user understanding.
+- **v1.2** (2025-04-09):
+    - **Projects Section Enhancements**:
+        - Added functionality to show/hide additional projects using a "See More Projects" toggle button.
+        - Positioned the toggle button to the right side for better layout flow.
+        - Ensured smooth visual integration with both light and dark themes, including custom colors and transitions.
 
 ## 📅 Versions
 
@@ -120,3 +125,4 @@ frontend-basics-homepage/
 
 - **v1.0** (2025-04-08): Finalized homepage layout, improved styling, accessibility improvements, and theme toggle functionality with localStorage support.
 - **v1.1** (2025-04-09): Fixed section scroll positioning under navbar and improved theme toggle button with icon and dynamic label.
+- **v1.2** (2025-04-09): Added "See More Projects" button to toggle visibility of additional projects with responsive styling and theme compatibility.
