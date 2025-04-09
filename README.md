@@ -101,6 +101,11 @@ frontend-basics-homepage/
         - Updated theme icon accordingly based on the current theme (☽ for light, ☀ for dark).
         - Applied dark mode styles for various elements including navigation, sections, and project items.
 
+- **v1.1** (2025-04-09):
+    - **Bug Fixes and Enhancements**:
+        - **Fixed section scroll positioning under navbar**: Adjusted scrolling behavior to ensure sections are correctly positioned below the fixed navigation bar.
+        - **Improved theme toggle button**: Enhanced the theme toggle button with a visual icon (☀/☽) and a dynamic label that changes based on the current theme for better user understanding.
+
 ## 📅 Versions
 
 - **v0.1** (2025-04-06): Initial structure with header and basic styling
@@ -112,4 +117,6 @@ frontend-basics-homepage/
 - **v0.7** (2025-04-08): Added sticky navigation bar and scroll spy functionality.
 - **v0.8** (2025-04-08): Added responsive design improvements and media queries for navigation, projects, and contact sections.
 - **v0.9** (2025-04-08): Scroll to Top button with smooth scroll, SVG icon, hover animation, and dedicated styling
+
 - **v1.0** (2025-04-08): Finalized homepage layout, improved styling, accessibility improvements, and theme toggle functionality with localStorage support.
+- **v1.1** (2025-04-09): Fixed section scroll positioning under navbar and improved theme toggle button with icon and dynamic label.
