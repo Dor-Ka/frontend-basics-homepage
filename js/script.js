@@ -72,3 +72,23 @@ if (themeToggleButton) {
 
   themeToggleButton.addEventListener('click', toggleTheme);
 }
+
+// See/Hidden projects
+const showMoreButton = document.getElementById('show-more-projects');
+const hiddenProjects = document.querySelectorAll('.projects .hidden');
+let projectsVisible = false;
+
+showMoreButton.addEventListener('click', () => {
+    if (projectsVisible) {
+        hiddenProjects.forEach(project => {
+            project.classList.add('hidden');
+        });
+        showMoreButton.textContent = "See More Projects";  
+    } else {
+        hiddenProjects.forEach(project => {
+            project.classList.remove('hidden');
+        });
+        showMoreButton.textContent = "Hide Projects";  
+    }
+    projectsVisible = !projectsVisible;
+});
