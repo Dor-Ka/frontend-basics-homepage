@@ -7,11 +7,21 @@ This is the first step of a full portfolio project, built step by step — from 
 
 View the project: [frontend basics homepage](https://dor-ka.github.io/frontend-basics-homepage/)
 
+![light theme](/img/readme-light.png)
+![dark theme](/img/readme-dark.png)
+
 ## 🛠️ Built With:
 
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
+
+### 🎓 Key Learnings
+- Structured HTML/CSS with BEM methodology
+- Responsive layout using media queries and grid/flexbox
+- Theme toggle with localStorage
+- Basic accessibility practices (aria-labels, semantic elements)
+- DOM manipulation with JavaScript
 
 ## 📁 Folder Structure
 
@@ -26,8 +36,12 @@ frontend-basics-homepage/
 &emsp;└── projects.css    
 &emsp;└── contact.css      
 &emsp;└── scroll-to-up.css   
+&emsp;└── dark-theme.css    
 ├── js/script.js   
-├── img/profile.jpg   
+├── img    
+&emsp;├── profile.jpg    
+&emsp;├── favicon.ico    
+&emsp;├── og_image_v2.png    
 └── README.md  
 
 ## 🚀 Progress and Features
