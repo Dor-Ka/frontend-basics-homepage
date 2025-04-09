@@ -5,7 +5,7 @@ This is the first step of a full portfolio project, built step by step — from 
 
 ## 👩‍💻 Live Demo
 
-View the project: [frontend basics homepage](https://dor-ka.github.io/frontend-basics-homepage/)
+View the project: [frontend basics homepage](https://dor-ka.github.io/frontend-vanilla-js-portfolio/)
 
 ![light theme](/img/readme-light.png)
 ![dark theme](/img/readme-dark.png)
