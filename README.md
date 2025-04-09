@@ -1,11 +1,11 @@
-# Frontend Basics Homepage
+# Frontend Portfolio (Vanilla JS)
 
 A simple developer homepage built with HTML, CSS and JavaScript.  
 This is the first step of a full portfolio project, built step by step — from basics to more advanced features.
 
 ## 👩‍💻 Live Demo
 
-View the project: [frontend basics homepage](https://dor-ka.github.io/frontend-vanilla-js-portfolio/)
+View the project: [Frontend Portfolio (Vanilla JS)](https://dor-ka.github.io/frontend-vanilla-js-portfolio/)
 
 ![light theme](/img/readme-light.png)
 ![dark theme](/img/readme-dark.png)
@@ -25,7 +25,7 @@ View the project: [frontend basics homepage](https://dor-ka.github.io/frontend-v
 
 ## 📁 Folder Structure
 
-frontend-basics-homepage/  
+frontend-vanilla-js-portfolio/  
 ├── index.html  
 ├── css  
 &emsp;├── style.css     
