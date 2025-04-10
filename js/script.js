@@ -1,4 +1,5 @@
-// Scroll spy: Track active section and highlight corresponding nav link
+{
+  // Scroll spy: Track active section and highlight corresponding nav link
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav__link");
 
@@ -92,3 +93,4 @@ showMoreButton.addEventListener('click', () => {
     }
     projectsVisible = !projectsVisible;
 });
+}
