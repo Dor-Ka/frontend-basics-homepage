@@ -7,8 +7,13 @@ This is the first step of a full portfolio project, built step by step — from 
 
 View the project: [Frontend Portfolio (Vanilla JS)](https://dor-ka.github.io/frontend-vanilla-js-portfolio/)
 
+## 🖼️ Screenshots
+
+Here’s a preview of how the Timer App looks:
 ![light theme](/img/readme-light.png)
+*light theme mode*
 ![dark theme](/img/readme-dark.png)
+*dark theme mode*
 
 ## 🛠️ Built With:
 
