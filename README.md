@@ -9,7 +9,7 @@ View the project: [Frontend Portfolio (Vanilla JS)](https://dor-ka.github.io/fro
 
 ## 🖼️ Screenshots
 
-Here’s a preview of how the Timer App looks:
+Here’s a preview of how the Timer App looks:    
 *light theme mode:*
 ![light theme](/img/readme-light.png)
 
