@@ -14,7 +14,7 @@ Here’s a preview of how the Timer App looks:
 ![light theme](/img/readme-light.png)
 
 *dark theme mode:*
-![dark theme](/img/readme-dark.png)
+![dark theme](/img/readme-dark-v2.png)
 
 ## 🛠️ Built With:
 
