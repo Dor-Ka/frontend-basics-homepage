@@ -97,6 +97,10 @@
 
 
 // GitHub API
+let visibleProjects = 4; 
+const projectsContainer = document.querySelector('.projects__list');
+const showMoreButton = document.getElementById('show-more-projects');
+
 const fetchProjects = async () => {
   const username = 'Dor-Ka'; 
   const apiUrl = `https://api.github.com/users/${username}/repos`;
@@ -104,9 +108,6 @@ const fetchProjects = async () => {
   try {
     const response = await fetch(apiUrl);
     const projects = await response.json();
-
-    const projectsContainer = document.querySelector('.projects__list');
-    projectsContainer.innerHTML = ''; 
 
     const formatProjectName = (name) => {
       return name
@@ -121,31 +122,55 @@ const fetchProjects = async () => {
 
     const filteredProjects = projects.filter(project => /frontend/i.test(project.name));
 
-    filteredProjects.forEach(project => {
-      const projectElement = document.createElement('article');
-      projectElement.classList.add('project');
+    const renderProjects = () => {
+      const projectsToRender = filteredProjects.slice(0, visibleProjects);
+      projectsContainer.innerHTML = ''; 
 
-      const projectLink = document.createElement('a');
-      projectLink.href = project.html_url; 
-      projectLink.target = '_blank'; 
-      projectLink.classList.add('project__link'); 
+      projectsToRender.forEach(project => {
+        const projectElement = document.createElement('article');
+        projectElement.classList.add('project');
 
-      projectElement.innerHTML = `
-        <h3 class="project__name">${formatProjectName(project.name)}</h3>
-        <section>
-          <ul class="project__tech">
-            <li>${getProjectTech(project.name)}</li> <!-- Dodajemy technologię -->
-          </ul>
-        </section>
+        const projectLink = document.createElement('a');
+        projectLink.href = project.html_url; 
+        projectLink.target = '_blank'; 
+        projectLink.classList.add('project__link'); 
 
-        <section class="project__description">
-          ${project.description || 'No description available'}
-        </section>
-      `;
+        projectElement.innerHTML = `
+          <h3 class="project__name">${formatProjectName(project.name)}</h3>
+          <section>
+            <ul class="project__tech">
+              <li>${getProjectTech(project.name)}</li>
+            </ul>
+          </section>
+          <section class="project__description">
+            ${project.description || 'No description available'}
+          </section>
+        `;
 
-      projectLink.appendChild(projectElement);
+        projectLink.appendChild(projectElement);
+        projectsContainer.appendChild(projectLink);
+      });
 
-      projectsContainer.appendChild(projectLink);
+      const remainingProjects = filteredProjects.length - visibleProjects;
+      if (remainingProjects > 0) {
+        showMoreButton.textContent = `See More Projects (${remainingProjects} left)`;
+      } else {
+        showMoreButton.style.display = 'none';
+      }
+    };
+
+    renderProjects();
+
+    showMoreButton.addEventListener('click', () => {
+      visibleProjects += 4; 
+      renderProjects(); 
+      
+      const remainingProjects = filteredProjects.length - visibleProjects;
+      if (remainingProjects > 0) {
+        showMoreButton.textContent = `See More Projects (${remainingProjects} left)`;
+      } else {
+        showMoreButton.textContent = 'Hide Projects'; 
+      }
     });
 
   } catch (error) {
@@ -154,4 +179,3 @@ const fetchProjects = async () => {
 };
 
 document.addEventListener('DOMContentLoaded', fetchProjects);
-
