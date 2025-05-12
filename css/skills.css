@@ -12,9 +12,8 @@
 .skills__item {
     padding: 1rem;
     background-color: #f5f5f5;
-    border: 1px solid #E38327;
+    border: 1px solid #37BDF8;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     font-size: 1.2rem;
     color: #333;
@@ -22,10 +21,10 @@
 }
 
 .skills__item:hover {
-    background-color: #E38327;
+    background-color: #37BDF8;
 }
 
 .skills__item:active {
-    background-color: #E38327;
+    background-color: #37BDF8;
     color: #fff;
 }

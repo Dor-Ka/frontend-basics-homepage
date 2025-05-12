@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px 2px #37bef8d1;
     z-index: 1000;
     padding: 1rem 0;
     display: flex;
@@ -31,12 +31,12 @@
 
 .nav__link:hover,
 .nav__link:focus {
-    color: #E38327;
+    color: #37BDF8;
     text-decoration: none;
 }
 
 .nav__link.active {
-    color: #E38327;
+    color: #37BDF8;
     text-decoration: underline;
 }
 
@@ -44,7 +44,7 @@
     background-color: transparent;
     font-size: 1rem;
     padding: 0.1rem 1.2rem;
-    border: 2px solid #E38327;
+    border: 2px solid #37BDF8;
     border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -56,12 +56,12 @@
 }
 
 .theme-toggle__button:hover {
-    background-color: #E38327;
+    background-color: #37BDF8;
 }
 
 .theme-toggle__button:focus {
     outline: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px 2px #37bef8d1;
 }
 
 .theme-toggle__button #theme-icon {

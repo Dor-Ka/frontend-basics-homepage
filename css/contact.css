@@ -8,7 +8,7 @@
 
 .contact__title {
     font-size: 2rem;
-    color: #E38327;
+    color: #37BDF8;
     margin-bottom: 1.5rem;
 }
 
@@ -23,7 +23,7 @@
 }
 
 .contact__info a {
-    color: #E38327;
+    color: #37BDF8;
     text-decoration: none;
 }
 
@@ -34,12 +34,12 @@
 }
 
 .contact__info a:active {
-    color: hsl(29, 77%, 62%);
+    color: #37BDF8;
 }
 
 .contact__info a:focus {
-    outline: 1px solid #E38327;  
-    box-shadow: 0 0 5px 2px rgba(227, 131, 39, 0.5); 
+    outline: 1px solid #37BDF8;  
+    box-shadow: 0 0 5px 2px #37bef8d1;
 }
 
 @media (max-width: 420px) {
