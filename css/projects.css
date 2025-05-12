@@ -17,8 +17,9 @@
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s ease;
-    height: 350px;
+    height: 250px;
     overflow: hidden; 
+    position: relative;
 }
 
 .project:hover {
@@ -31,6 +32,7 @@
     font-size: 1.3rem;
     color: #333;
     margin-bottom: 0.5rem;
+    font-weight: bold;
 }
 
 .project__description {
@@ -38,6 +40,7 @@
     color: #555;
     margin-bottom: 1rem;
     line-height: 1.5;
+    flex-grow: 1; 
 }
 
 .project__tech {
@@ -67,25 +70,37 @@
     color: #fff;
 }
 
+.project__link {
+    text-decoration: none; 
+}
+
+.project__link .project__name,
+.project__link .project__description,
+.project__link .project__tech {
+    text-decoration: none; 
+}
+
 .project__links a {
-    margin-right: 1rem;
     color: #37BDF8;
-    text-decoration: none;
+    text-decoration: none; 
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .project__links a:hover {
     text-decoration: underline;
+    color: #005f87; 
 }
 
 .project__links a:active {
-    color:#37bef8d0;
+    color: #37bef8d0;
 }
 
 .project__links a:focus {
     outline: 1px solid #37BDF8;
     box-shadow: 0 0 5px 2px #37bef8d1;
 }
+
 
 .hidden {
     display: none;
@@ -98,7 +113,7 @@
 }
 
 .show-more-btn {
-    background-color: #37BDF8;
+    background-color: #37bef8c1;
     color: #333;
     padding: 0.5rem 1rem;
     border: none;
@@ -108,7 +123,7 @@
 }
 
 .show-more-btn:hover {
-    background-color: #d47724;
+    background-color: #37BDF8;
 }
 
 @media (max-width: 470px) {
