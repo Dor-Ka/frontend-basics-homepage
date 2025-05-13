@@ -9,12 +9,9 @@ View the project: [Frontend Portfolio (Vanilla JS)](https://dor-ka.github.io/fro
 
 ## 🖼️ Screenshots
 
-Here’s a preview of how the Timer App looks:    
-*light theme mode:*
-![light theme](/img/readme-light.png)
+![Screenshot 2](/img/Screenshot-2.png)
+![Screenshot 1](/img/Screenshot-1.png)
 
-*dark theme mode:*
-![dark theme](/img/readme-dark-v2.png)
 
 ## 🛠️ Built With:
 
@@ -130,6 +127,11 @@ frontend-vanilla-js-portfolio/
         - Added functionality to show/hide additional projects using a "See More Projects" toggle button.
         - Positioned the toggle button to the right side for better layout flow.
         - Ensured smooth visual integration with both light and dark themes, including custom colors and transitions.
+- **v1.3** (2025-05-13):
+    - **GitHub Projects Section Enhancements**:
+        - Added loading indicator while fetching GitHub projects to improve user experience.
+        - Displayed a "loading" text and spinner until the projects are successfully loaded.
+        - Optimized the flow to handle slow network connections gracefully.
 
 ## 📅 Versions
 
@@ -146,3 +148,4 @@ frontend-vanilla-js-portfolio/
 - **v1.0** (2025-04-08): Finalized homepage layout, improved styling, accessibility improvements, and theme toggle functionality with localStorage support.
 - **v1.1** (2025-04-09): Fixed section scroll positioning under navbar and improved theme toggle button with icon and dynamic label.
 - **v1.2** (2025-04-09): Added "See More Projects" button to toggle visibility of additional projects with responsive styling and theme compatibility.
+- **V1.3** (2025-05-13): Added a loading indicator for GitHub projects section, including a spinner and loading text while fetching projects. 
