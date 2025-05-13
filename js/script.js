@@ -34,10 +34,13 @@ let showingAll = false;
 
 const projectsContainer = document.querySelector('.projects__list');
 const showMoreButton = document.getElementById('show-more-projects');
+const loadingElement = document.getElementById('loading'); 
 
 const fetchProjects = async () => {
   const username = 'Dor-Ka';
   const apiUrl = `https://api.github.com/users/${username}/repos`;
+
+  loadingElement.style.display = 'block';
 
   try {
     const response = await fetch(apiUrl);
@@ -57,26 +60,21 @@ const fetchProjects = async () => {
     const filteredProjects = projects.filter(project => /frontend/i.test(project.name));
 
     const renderProjects = () => {
-      if (filteredProjects.length === 0) {
-        projectsContainer.innerHTML = '<p>No projects found.</p>';
-        return;
-      }
-    
       const projectsToRender = showingAll
         ? filteredProjects
         : filteredProjects.slice(0, visibleProjects);
-    
+
       projectsContainer.innerHTML = '';
-    
+
       projectsToRender.forEach(project => {
         const projectElement = document.createElement('article');
         projectElement.classList.add('project');
-    
+
         const projectLink = document.createElement('a');
         projectLink.href = project.html_url;
         projectLink.target = '_blank';
         projectLink.classList.add('project__link');
-    
+
         projectElement.innerHTML = `
           <h3 class="project__name">${formatProjectName(project.name)}</h3>
           <section>
@@ -88,14 +86,13 @@ const fetchProjects = async () => {
             ${project.description || 'No description available'}
           </section>
         `;
-    
+
         projectLink.appendChild(projectElement);
         projectsContainer.appendChild(projectLink);
       });
-    
+
       updateButton();
     };
-    
 
     const updateButton = () => {
       if (filteredProjects.length <= visibleProjects) {
@@ -115,21 +112,17 @@ const fetchProjects = async () => {
 
     renderProjects();
 
-    if (showMoreButton) {
-      showMoreButton.addEventListener('click', () => {
-        showingAll = !showingAll;
-        renderProjects();
-      });
-    }
-    
+    showMoreButton.addEventListener('click', () => {
+      showingAll = !showingAll;
+      renderProjects();
+    });
 
   } catch (error) {
     console.error('Error fetching GitHub projects:', error);
-    projectsContainer.innerHTML = '<p>Failed to load projects. Please try again later.</p>';
+  } finally {
+
+    loadingElement.style.display = 'none';
   }
-  
 };
 
-document.addEventListener('DOMContentLoaded', async () => {
-  await fetchProjects();
-});
+document.addEventListener('DOMContentLoaded', fetchProjects);
