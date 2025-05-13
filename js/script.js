@@ -97,12 +97,14 @@
 
 
 // GitHub API
-let visibleProjects = 4; 
+let visibleProjects = 4;
+let showingAll = false;
+
 const projectsContainer = document.querySelector('.projects__list');
 const showMoreButton = document.getElementById('show-more-projects');
 
 const fetchProjects = async () => {
-  const username = 'Dor-Ka'; 
+  const username = 'Dor-Ka';
   const apiUrl = `https://api.github.com/users/${username}/repos`;
 
   try {
@@ -111,9 +113,9 @@ const fetchProjects = async () => {
 
     const formatProjectName = (name) => {
       return name
-        .replace(/(frontend-|youcode-|youcode-react-|react-|vanilla-js-)/gi, "") 
-        .replace(/-/g, " ") 
-        .replace(/\b\w/g, (char) => char.toUpperCase()); 
+        .replace(/(frontend-|youcode-|youcode-react-|react-|vanilla-js-)/gi, "")
+        .replace(/-/g, " ")
+        .replace(/\b\w/g, (char) => char.toUpperCase());
     };
 
     const getProjectTech = (name) => {
@@ -123,17 +125,20 @@ const fetchProjects = async () => {
     const filteredProjects = projects.filter(project => /frontend/i.test(project.name));
 
     const renderProjects = () => {
-      const projectsToRender = filteredProjects.slice(0, visibleProjects);
-      projectsContainer.innerHTML = ''; 
+      const projectsToRender = showingAll
+        ? filteredProjects
+        : filteredProjects.slice(0, visibleProjects);
+
+      projectsContainer.innerHTML = '';
 
       projectsToRender.forEach(project => {
         const projectElement = document.createElement('article');
         projectElement.classList.add('project');
 
         const projectLink = document.createElement('a');
-        projectLink.href = project.html_url; 
-        projectLink.target = '_blank'; 
-        projectLink.classList.add('project__link'); 
+        projectLink.href = project.html_url;
+        projectLink.target = '_blank';
+        projectLink.classList.add('project__link');
 
         projectElement.innerHTML = `
           <h3 class="project__name">${formatProjectName(project.name)}</h3>
@@ -151,26 +156,30 @@ const fetchProjects = async () => {
         projectsContainer.appendChild(projectLink);
       });
 
-      const remainingProjects = filteredProjects.length - visibleProjects;
-      if (remainingProjects > 0) {
-        showMoreButton.textContent = `See More Projects (${remainingProjects} left)`;
-      } else {
+      updateButton();
+    };
+
+    const updateButton = () => {
+      if (filteredProjects.length <= visibleProjects) {
         showMoreButton.style.display = 'none';
+        return;
+      }
+
+      showMoreButton.style.display = 'block';
+
+      if (showingAll) {
+        showMoreButton.textContent = 'Hide Projects';
+      } else {
+        const remaining = filteredProjects.length - visibleProjects;
+        showMoreButton.textContent = `See More Projects (${remaining} left)`;
       }
     };
 
     renderProjects();
 
     showMoreButton.addEventListener('click', () => {
-      visibleProjects += 4; 
-      renderProjects(); 
-      
-      const remainingProjects = filteredProjects.length - visibleProjects;
-      if (remainingProjects > 0) {
-        showMoreButton.textContent = `See More Projects (${remainingProjects} left)`;
-      } else {
-        showMoreButton.textContent = 'Hide Projects'; 
-      }
+      showingAll = !showingAll;
+      renderProjects();
     });
 
   } catch (error) {
