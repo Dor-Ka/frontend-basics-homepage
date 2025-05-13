@@ -1,100 +1,32 @@
-{
-  // Scroll spy: Track active section and highlight corresponding nav link
-  const sections = document.querySelectorAll("section");
-  const navLinks = document.querySelectorAll(".nav__link");
+// Theme toggle
+const themeToggleButton = document.getElementById('theme-toggle');
+const themeIcon = document.getElementById('theme-icon');
+const themeLabel = document.getElementById('theme-label');
 
-  window.addEventListener("scroll", () => {
-    let currentSectionId = "";
-    let minDistance = window.innerHeight;
+if (themeToggleButton) {
+  function updateThemeUI(isDark) {
+    themeIcon.textContent = isDark ? '☀' : '☽';
+    themeLabel.textContent = isDark ? 'light' : 'dark';
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  }
+  
 
-    sections.forEach((section) => {
-      const rect = section.getBoundingClientRect();
-      const distanceFromTop = Math.abs(rect.top);
-
-      if (distanceFromTop < minDistance && rect.top < window.innerHeight) {
-        minDistance = distanceFromTop;
-        currentSectionId = section.getAttribute("id");
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove("active");
-      if (link.getAttribute("href") === `#${currentSectionId}`) {
-        link.classList.add("active");
-      }
-    });
-  });
-
-  // Scroll to Top Button
-  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-  window.addEventListener("scroll", () => {
-    scrollToTopBtn.style.display = window.scrollY > 300 ? "block" : "none";
-  });
-
-  scrollToTopBtn.addEventListener("click", () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  });
-
-  // Theme toggle
-  const themeToggleButton = document.getElementById('theme-toggle');
-  const themeIcon = document.getElementById('theme-icon');
-  const themeLabel = document.getElementById('theme-label');
-
-  if (themeToggleButton) {
-    function updateThemeUI(isDark) {
-      if (isDark) {
-        themeIcon.textContent = '☀';
-        themeLabel.textContent = 'light';
-        localStorage.setItem('theme', 'dark');
-      } else {
-        themeIcon.textContent = '☽';
-        themeLabel.textContent = 'dark';
-        localStorage.setItem('theme', 'light');
-      }
-    }
-
-    function toggleTheme() {
-      const isDark = document.body.classList.toggle('theme-toggle--dark');
-      updateThemeUI(isDark);
-    }
-
-    window.addEventListener('load', () => {
-      const savedTheme = localStorage.getItem('theme');
-      const isDark = savedTheme === 'dark';
-      if (isDark) {
-        document.body.classList.add('theme-toggle--dark');
-      }
-      updateThemeUI(isDark);
-    });
-
-    themeToggleButton.addEventListener('click', toggleTheme);
+  function toggleTheme() {
+    const isDark = document.body.classList.toggle('theme-toggle--dark');
+    updateThemeUI(isDark);
   }
 
-  // See/Hidden projects
-  const showMoreButton = document.getElementById('show-more-projects');
-  const hiddenProjects = document.querySelectorAll('.projects .hidden');
-  let projectsVisible = false;
-
-  showMoreButton.addEventListener('click', () => {
-    if (projectsVisible) {
-      hiddenProjects.forEach(project => {
-        project.classList.add('hidden');
-      });
-      showMoreButton.textContent = "See More Projects";
-    } else {
-      hiddenProjects.forEach(project => {
-        project.classList.remove('hidden');
-      });
-      showMoreButton.textContent = "Hide Projects";
+  window.addEventListener('load', () => {
+    const savedTheme = localStorage.getItem('theme');
+    const isDark = savedTheme === 'dark';
+    if (isDark) {
+      document.body.classList.add('theme-toggle--dark');
     }
-    projectsVisible = !projectsVisible;
+    updateThemeUI(isDark);
   });
-}
 
+  themeToggleButton.addEventListener('click', toggleTheme);
+}
 
 // GitHub API
 let visibleProjects = 4;
@@ -125,21 +57,26 @@ const fetchProjects = async () => {
     const filteredProjects = projects.filter(project => /frontend/i.test(project.name));
 
     const renderProjects = () => {
+      if (filteredProjects.length === 0) {
+        projectsContainer.innerHTML = '<p>No projects found.</p>';
+        return;
+      }
+    
       const projectsToRender = showingAll
         ? filteredProjects
         : filteredProjects.slice(0, visibleProjects);
-
+    
       projectsContainer.innerHTML = '';
-
+    
       projectsToRender.forEach(project => {
         const projectElement = document.createElement('article');
         projectElement.classList.add('project');
-
+    
         const projectLink = document.createElement('a');
         projectLink.href = project.html_url;
         projectLink.target = '_blank';
         projectLink.classList.add('project__link');
-
+    
         projectElement.innerHTML = `
           <h3 class="project__name">${formatProjectName(project.name)}</h3>
           <section>
@@ -151,13 +88,14 @@ const fetchProjects = async () => {
             ${project.description || 'No description available'}
           </section>
         `;
-
+    
         projectLink.appendChild(projectElement);
         projectsContainer.appendChild(projectLink);
       });
-
+    
       updateButton();
     };
+    
 
     const updateButton = () => {
       if (filteredProjects.length <= visibleProjects) {
@@ -177,14 +115,21 @@ const fetchProjects = async () => {
 
     renderProjects();
 
-    showMoreButton.addEventListener('click', () => {
-      showingAll = !showingAll;
-      renderProjects();
-    });
+    if (showMoreButton) {
+      showMoreButton.addEventListener('click', () => {
+        showingAll = !showingAll;
+        renderProjects();
+      });
+    }
+    
 
   } catch (error) {
     console.error('Error fetching GitHub projects:', error);
+    projectsContainer.innerHTML = '<p>Failed to load projects. Please try again later.</p>';
   }
+  
 };
 
-document.addEventListener('DOMContentLoaded', fetchProjects);
+document.addEventListener('DOMContentLoaded', async () => {
+  await fetchProjects();
+});
