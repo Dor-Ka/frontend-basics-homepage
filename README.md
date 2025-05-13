@@ -34,17 +34,20 @@ frontend-vanilla-js-portfolio/
 &emsp;├── style.css     
 &emsp;├── nav.css      
 &emsp;├── section.css  
-&emsp;└── about.css   
-&emsp;└── skills.css    
-&emsp;└── projects.css    
-&emsp;└── contact.css      
-&emsp;└── scroll-to-up.css   
+&emsp;├── about.css   
+&emsp;├── skills.css    
+&emsp;├── projects.css    
+&emsp;├── contact.css      
+&emsp;├── scroll-to-up.css   
 &emsp;└── dark-theme.css    
 ├── js/script.js   
 ├── img    
-&emsp;├── profile.jpg    
-&emsp;├── favicon.ico    
-&emsp;├── og_image_v2.png    
+&emsp;├── favicon.ico  
+&emsp;├── og-x-imag.png
+&emsp;├── og-imag.jpg 
+&emsp;├── profile.jpeg  
+&emsp;├── Screenshot-1.png    
+&emsp;└── Screenshot-2.png    
 └── README.md  
 
 ## 🚀 Progress and Features
