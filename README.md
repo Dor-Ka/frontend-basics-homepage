@@ -27,28 +27,30 @@ View the project: [Frontend Portfolio (Vanilla JS)](https://dor-ka.github.io/fro
 - DOM manipulation with JavaScript
 
 ## 📁 Folder Structure
-
+```
 frontend-vanilla-js-portfolio/  
 ├── index.html  
 ├── css  
-&emsp;├── style.css     
-&emsp;├── nav.css      
-&emsp;├── section.css  
-&emsp;├── about.css   
-&emsp;├── skills.css    
-&emsp;├── projects.css    
-&emsp;├── contact.css      
-&emsp;├── scroll-to-up.css   
-&emsp;└── dark-theme.css    
-├── js/script.js   
+│   ├── style.css     
+│   ├── nav.css      
+│   ├── section.css  
+│   ├── about.css   
+│   ├── skills.css    
+│   ├── projects.css    
+│   ├── contact.css      
+│   ├── scroll-to-up.css   
+│   └── dark-theme.css    
+├── js  
+│   └── script.js   
 ├── img    
-&emsp;├── favicon.ico  
-&emsp;├── og-x-imag.png
-&emsp;├── og-imag.jpg 
-&emsp;├── profile.jpeg  
-&emsp;├── Screenshot-1.png    
-&emsp;└── Screenshot-2.png    
+│   ├── favicon.ico  
+│   ├── og-x-imag.png
+│   ├── og-imag.jpg 
+│   ├── profile.jpeg  
+│   ├── Screenshot-1.png    
+│   └── Screenshot-2.png    
 └── README.md  
+```
 
 ## 🚀 Progress and Features
 
